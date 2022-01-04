@@ -1,3 +1,7 @@
+main {
+    max-width: 1200px;
+}
+
 .about-section {
     width: 100%;
     min-height: 100vh;
@@ -7,15 +11,9 @@
     transition: 1s;
 }
 
-.about {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 40% 55%;
-    grid-gap: 40px;
-}
-
-.about-img-container {
-    position: relative;
+.about-img {
+    float: left;
+    margin: 20px;
 }
 
 .about-info {
@@ -23,10 +21,7 @@
     opacity: 0.6;
     font-size: 20px;
     line-height: 40px;
-}
-
-.about-img {
-    width: 500px;
+    font-size: 3vw;
 }
 
 .download-cv-btn {
@@ -133,4 +128,32 @@ a {
     text-align: center;
     top: 1px;
     width: 100px;
+}
+
+.hobbi {
+    text-indent: 20px;
+    line-height: 2;
+    font-size: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+
+table {
+    border: 1px solid gray;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: gray;
+    /* eltünteti a cellák közötti kis rést */
+}
+
+td,
+th {
+    border: 1px solid black;
+}
+
+td:hover,
+th:hover {
+    background-color: coral;
+    cursor: grab;
 }
